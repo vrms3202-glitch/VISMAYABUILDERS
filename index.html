@@ -6,7 +6,6 @@
   <meta name="theme-color" content="#142d3d">
   <meta name="description" content="VISMAYA BUILDERS offers building construction, interior and exterior painting, renovation, flooring and waterproofing services in Peroorkada, Kerala.">
   <title>VISMAYA BUILDERS | Construction & Painting</title>
-  <link rel="preload" as="image" href="assets/hero.svg">
   <link rel="stylesheet" href="styles.css">
   <script src="script.js" defer></script>
 </head>
@@ -57,18 +56,38 @@
         <p>A selection of construction and finishing inspiration.</p>
       </div>
       <div class="project-grid">
-        <figure><img src="assets/project-home.svg" alt="Modern residential construction illustration"><figcaption>Modern homes</figcaption></figure>
-        <figure><img src="assets/project-interior.svg" alt="Interior finishing illustration"><figcaption>Interior finishing</figcaption></figure>
-        <figure><img src="assets/project-exterior.svg" alt="Exterior painting illustration"><figcaption>Exterior painting</figcaption></figure>
-        <figure><img src="assets/project-renovation.svg" alt="Home renovation illustration"><figcaption>Renovation</figcaption></figure>
-        <figure><img src="assets/project-flooring.svg" alt="Flooring and tile work illustration"><figcaption>Flooring works</figcaption></figure>
-        <figure><img src="assets/about-construction.svg" alt="Building construction illustration"><figcaption>Construction</figcaption></figure>
+        <figure>
+          <div class="art art--home" role="img" aria-label="Modern residential construction illustration"></div>
+          <figcaption>Modern homes</figcaption>
+        </figure>
+        <figure>
+          <div class="art art--interior" role="img" aria-label="Interior finishing illustration"></div>
+          <figcaption>Interior finishing</figcaption>
+        </figure>
+        <figure>
+          <div class="art art--exterior" role="img" aria-label="Exterior painting illustration"></div>
+          <figcaption>Exterior painting</figcaption>
+        </figure>
+        <figure>
+          <div class="art art--renovation" role="img" aria-label="Home renovation illustration"></div>
+          <figcaption>Renovation</figcaption>
+        </figure>
+        <figure>
+          <div class="art art--flooring" role="img" aria-label="Flooring and tile work illustration"></div>
+          <figcaption>Flooring works</figcaption>
+        </figure>
+        <figure>
+          <div class="art art--construction" role="img" aria-label="Building construction illustration"></div>
+          <figcaption>Construction</figcaption>
+        </figure>
       </div>
       <p class="gallery-disclaimer">Gallery images are illustrative artwork, not verified photographs of completed client projects.</p>
     </section>
 
     <section class="about-section" id="about">
-      <div class="about-image"><img src="assets/about-construction.svg" alt="Illustration representing Vismaya Builders construction work"></div>
+      <div class="about-image">
+        <div class="art art--construction art--large" role="img" aria-label="Illustration representing Vismaya Builders construction work"></div>
+      </div>
       <div class="about-copy">
         <p class="eyebrow">WHO WE ARE</p><h2>About Our Company</h2>
         <p>We provide building construction, painting and renovation services with a focus on quality workmanship, reliable service and customer satisfaction.</p>
@@ -86,7 +105,7 @@
         <form id="appointmentForm">
           <div class="form-grid">
             <div class="form-group"><label for="name">Full name <span>*</span></label><input type="text" id="name" name="name" placeholder="Enter your full name" autocomplete="name" required></div>
-            <div class="form-group"><label for="phone">Phone number <span>*</span></label><input type="tel" id="phone" name="phone" placeholder="e.g. 9846619455" autocomplete="tel" pattern="[0-9+() -]{7,20}" required></div>
+            <div class="form-group"><label for="phone">Phone number <span>*</span></label><input type="tel" id="phone" name="phone" placeholder="e.g. 9846619455" autocomplete="tel" pattern="[0-9+()\-\s]+" required></div>
             <div class="form-group"><label for="email">Email address</label><input type="email" id="email" name="email" placeholder="Enter your email address" autocomplete="email"></div>
             <div class="form-group"><label for="service">Required service <span>*</span></label>
               <select id="service" name="service" required>
@@ -98,7 +117,7 @@
             </div>
             <div class="form-group"><label for="date">Preferred appointment date <span>*</span></label><input type="date" id="date" name="date" required></div>
             <div class="form-group"><label for="time">Preferred appointment time <span>*</span></label><input type="time" id="time" name="time" required></div>
-            <div class="form-group form-wide"><label for="message">Project details (optional)</label><textarea id="message" name="message" rows="4" placeholder="Tell us briefly about your project or location"></textarea></div>
+            <div class="form-group form-wide"><label for="message">Project details (optional)</label><textarea id="message" name="message" rows="4" placeholder="Tell us briefly about your project and expected timeline."></textarea></div>
           </div>
           <button class="btn btn-submit" type="submit">Send appointment request on WhatsApp <span aria-hidden="true">↗</span></button>
           <p class="form-hint">WhatsApp will open with your request ready to send. No appointment is confirmed until our team replies.</p>
