@@ -304,3 +304,48 @@ footer p+p{margin-top:5px}
   html{scroll-behavior:auto}
   *,*::before,*::after{transition:none!important;animation-duration:.01ms!important}
 }
+
+/* Extra layout refinements for tablets and compact phones. */
+@media (min-width:701px) and (max-width:1024px){
+  .site-header{padding-inline:5%}
+  .main-nav{gap:clamp(9px,1.7vw,16px)}
+  .main-nav a{font-size:clamp(11px,1.25vw,13px)}
+  .hero{min-height:620px;padding-inline:7%}
+  .section{padding-inline:6%}
+  .service-grid,.project-grid{gap:18px}
+  .about-section{gap:4%;padding-inline:6%}
+  .appointment-card{max-width:760px}
+}
+
+@media (max-width:480px){
+  html{scroll-padding-top:72px}
+  .site-header{padding:12px 5%}
+  .logo{font-size:clamp(16px,5vw,19px)}
+  .hero{min-height:620px;padding:68px 7% 150px;background-position:60% center}
+  .hero h1{font-size:clamp(36px,10vw,48px);letter-spacing:-1.5px}
+  .hero .eyebrow{font-size:9px;letter-spacing:1.7px}
+  .hero-copy{font-size:15px;line-height:1.65;margin:18px 0 23px}
+  .hero-actions{gap:10px}
+  .hero-actions .btn{width:100%;padding:13px 15px}
+  .hero-note{right:7%;left:7%;bottom:22px;padding:10px 14px}
+  .section{padding:54px 6%}
+  .section-heading{margin-bottom:30px}
+  .section-heading h2,.about-copy h2,.contact-section h2{font-size:clamp(28px,8vw,36px)}
+  .project-grid{grid-template-columns:1fr;gap:15px}
+  .project-grid .art{height:230px}
+  .about-section{padding:55px 7%;gap:20px}
+  .about-image .art{height:260px}
+  .appointment-card{padding:25px 16px;border-radius:14px}
+  .form-group input,.form-group select,.form-group textarea{font-size:16px}
+  .btn-submit{padding:14px 12px;font-size:12px}
+  .contact-section{padding:55px 7%}
+  .contact-details{gap:17px}
+  .whatsapp-float{right:12px;bottom:12px;padding:11px 15px}
+}
+
+@media (max-width:350px){
+  .hero{padding-inline:6%}
+  .hero h1{font-size:34px}
+  .section{padding-inline:5%}
+  .appointment-card{padding-inline:13px}
+}
