@@ -1,0 +1,314 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VISMAYA BUILDERS | Construction & Painting</title>
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:Arial,sans-serif;color:#263238;background:#fff}
+
+header{
+background:#142d3d;color:white;padding:18px 7%;
+display:flex;justify-content:space-between;align-items:center;
+position:sticky;top:0;z-index:10
+}
+.logo{font-size:25px;font-weight:bold;color:#ffb52e}
+nav a{color:white;text-decoration:none;margin-left:18px;font-size:14px}
+
+.hero{
+min-height:570px;
+background:linear-gradient(#071d2c88,#071d2caa),
+url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1600') center/cover;
+display:flex;align-items:center;padding:8%;color:white
+}
+.hero h1{font-size:50px;max-width:650px;line-height:1.15}
+.hero p{font-size:18px;margin:22px 0;max-width:550px;line-height:1.7}
+
+.btn{
+display:inline-block;background:#ffb52e;color:#142d3d;
+padding:14px 25px;border-radius:5px;text-decoration:none;font-weight:bold;
+border:none;cursor:pointer
+}
+
+section{padding:75px 8%}
+.heading{text-align:center;margin-bottom:40px}
+.heading h2{font-size:34px;color:#142d3d}
+.heading p{color:#777;margin-top:12px}
+
+.services{
+display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:22px
+}
+.card{
+padding:28px;background:#f5f7f8;border-radius:9px;
+border-bottom:4px solid #ffb52e
+}
+.card h3{margin-bottom:12px;color:#142d3d}
+.card p{color:#666;line-height:1.7}
+.card .symbol{font-size:35px;margin-bottom:15px}
+
+.gallery{
+display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px
+}
+.gallery img{
+width:100%;height:230px;object-fit:cover;border-radius:8px;transition:.3s
+}
+.gallery img:hover{transform:scale(1.03)}
+
+.about{
+background:#f3f6f7;display:grid;grid-template-columns:1fr 1fr;
+gap:35px;align-items:center
+}
+.about img{width:100%;border-radius:10px}
+.about p{line-height:1.8;color:#666;margin:18px 0}
+
+/* APPOINTMENT FORM */
+.appointment{background:#f3f6f7}
+.appointment-box{
+max-width:650px;margin:auto;background:white;padding:35px;
+border-radius:12px;box-shadow:0 5px 25px #00000012
+}
+.appointment-box h2{
+text-align:center;color:#142d3d;font-size:32px;margin-bottom:12px
+}
+.appointment-box .subtitle{
+text-align:center;color:#777;margin-bottom:25px;line-height:1.6
+}
+.form-group{margin-bottom:17px}
+.form-group label{
+display:block;margin-bottom:8px;color:#142d3d;font-weight:bold
+}
+.form-group input,
+.form-group select{
+width:100%;padding:13px;border:1px solid #ccc;
+border-radius:5px;font-size:15px;font-family:Arial;background:white
+}
+.form-group input:focus,
+.form-group select:focus{
+outline:none;border-color:#ffb52e
+}
+.appointment-box button{
+width:100%;padding:15px;background:#20c767;color:white;
+border:none;border-radius:5px;font-size:16px;font-weight:bold;
+cursor:pointer;margin-top:10px
+}
+.appointment-box button:hover{background:#18a957}
+
+.contact{background:#142d3d;color:white;text-align:center}
+.contact h2{font-size:34px;margin-bottom:20px}
+.contact p{margin:12px}
+
+footer{background:#0c202c;color:#ccc;text-align:center;padding:24px}
+footer p{margin:8px}
+
+.whatsapp{
+position:fixed;bottom:22px;right:22px;background:#20c767;
+color:white;padding:15px 20px;border-radius:40px;
+text-decoration:none;font-weight:bold;z-index:20
+}
+
+@media(max-width:700px){
+header{flex-direction:column;gap:15px}
+nav{display:flex;flex-wrap:wrap;justify-content:center;gap:12px}
+nav a{margin:0;font-size:12px}
+.hero h1{font-size:37px}
+.about{grid-template-columns:1fr}
+section{padding:55px 6%}
+.appointment-box{padding:22px}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="logo">VISMAYA BUILDERS</div>
+<nav>
+<a href="#home">Home</a>
+<a href="#services">Services</a>
+<a href="#projects">Projects</a>
+<a href="#about">About</a>
+<a href="#appointment">Appointment</a>
+<a href="#contact">Contact</a>
+</nav>
+</header>
+
+<div class="hero" id="home">
+<div>
+<h1>Building Dreams. Painting Excellence.</h1>
+<p>Professional building construction, interior and exterior painting, renovation and maintenance services. Quality work you can trust.</p>
+<a href="#appointment" class="btn">BOOK AN APPOINTMENT</a>
+</div>
+</div>
+
+<section id="services">
+<div class="heading">
+<h2>Our Services</h2>
+<p>Complete solutions for your home and commercial spaces</p>
+</div>
+
+<div class="services">
+<div class="card"><div class="symbol">🏠</div><h3>Building Construction</h3><p>New residential and commercial building construction with quality materials and professional workmanship.</p></div>
+
+<div class="card"><div class="symbol">🎨</div><h3>Interior Painting</h3><p>Beautiful interior painting, wall finishing and decorative painting for your dream home.</p></div>
+
+<div class="card"><div class="symbol">🖌️</div><h3>Exterior Painting</h3><p>Weather-resistant exterior painting to protect and beautify your building.</p></div>
+
+<div class="card"><div class="symbol">🔨</div><h3>Renovation Works</h3><p>House renovation, repairs, modifications and complete makeover services.</p></div>
+
+<div class="card"><div class="symbol">🧱</div><h3>Plastering & Flooring</h3><p>Professional plastering, tile installation and flooring solutions.</p></div>
+
+<div class="card"><div class="symbol">🏢</div><h3>Waterproofing</h3><p>Terrace, bathroom and wall waterproofing solutions to prevent leakage.</p></div>
+</div>
+</section>
+
+<section id="projects">
+<div class="heading">
+<h2>Our Project Gallery</h2>
+<p>Explore construction and painting reference projects</p>
+</div>
+
+<div class="gallery">
+<img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=600" alt="Modern house">
+<img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=600" alt="Interior design">
+<img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=600" alt="Modern interior">
+<img src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=600" alt="Luxury construction">
+<img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=600" alt="Home renovation">
+<img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=600" alt="Interior finishing">
+</div>
+</section>
+
+<section class="about" id="about">
+<div>
+<h2>About Our Company</h2>
+<p>We provide professional building construction, painting and renovation services. Our focus is quality workmanship, reliable service and customer satisfaction.</p>
+<p>From the foundation to the final coat of paint, we work to make your dream project a reality.</p>
+<a href="#appointment" class="btn">CONTACT US</a>
+</div>
+<img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=800" alt="Construction work">
+</section>
+
+<!-- APPOINTMENT BOOKING FORM -->
+<section class="appointment" id="appointment">
+<div class="appointment-box">
+
+<h2>Book an Appointment</h2>
+<p class="subtitle">
+Schedule your appointment or free consultation with VISMAYA BUILDERS.
+</p>
+
+<form id="appointmentForm">
+
+<div class="form-group">
+<label for="name">Full Name *</label>
+<input type="text" id="name" placeholder="Enter your full name" required>
+</div>
+
+<div class="form-group">
+<label for="dob">Date of Birth *</label>
+<input type="date" id="dob" required>
+</div>
+
+<div class="form-group">
+<label for="email">Email Address *</label>
+<input type="email" id="email" placeholder="Enter your email address" required>
+</div>
+
+<div class="form-group">
+<label for="phone">Phone Number *</label>
+<input type="tel" id="phone" placeholder="Enter your phone number"
+pattern="[0-9+() -]{7,20}" required>
+</div>
+
+<div class="form-group">
+<label for="service">Select Required Service *</label>
+<select id="service" required>
+<option value="">-- Choose Your Service --</option>
+<option>Building Construction</option>
+<option>Interior Painting</option>
+<option>Exterior Painting</option>
+<option>Renovation Works</option>
+<option>Plastering Works</option>
+<option>Flooring & Tile Installation</option>
+<option>Waterproofing</option>
+<option>Building Maintenance</option>
+<option>Free Consultation</option>
+<option>Other Services</option>
+</select>
+</div>
+
+<div class="form-group">
+<label for="date">Appointment Date *</label>
+<input type="date" id="date" required>
+</div>
+
+<div class="form-group">
+<label for="time">Appointment Time *</label>
+<input type="time" id="time" required>
+</div>
+
+<button type="submit">SUBMIT THROUGH WHATSAPP</button>
+
+</form>
+</div>
+</section>
+
+<section id="contact" class="contact">
+<h2>Let's Build Your Dream Project!</h2>
+<p>Need a quotation? Contact us today.</p>
+<p>📞 Phone: +919846619455</p>
+<p>📍 Location: VISMAYA BUILDERS, NCC ROAD PEROORKADA</p>
+<p>✉ Email: YOUR EMAIL</p>
+<a class="btn" href="https://wa.me/919846619455">CHAT ON WHATSAPP</a>
+</section>
+
+<footer>
+<p>© 2026 VISMAYA BUILDERS. All Rights Reserved.</p>
+<p>Painting | Construction | Renovation</p>
+</footer>
+
+<a class="whatsapp" href="https://wa.me/919846619455">WhatsApp</a>
+
+<script>
+document.getElementById("appointmentForm").addEventListener("submit", function(e) {
+
+    e.preventDefault();
+
+    const name = document.getElementById("name").value.trim();
+    const dob = document.getElementById("dob").value;
+    const email = document.getElementById("email").value.trim();
+    const phone = document.getElementById("phone").value.trim();
+    const service = document.getElementById("service").value;
+    const date = document.getElementById("date").value;
+    const time = document.getElementById("time").value;
+
+    const message =
+        "🏗️ *NEW APPOINTMENT REQUEST*\n\n" +
+        "*VISMAYA BUILDERS*\n" +
+        "--------------------------\n" +
+        "👤 Name: " + name + "\n" +
+        "🎂 Date of Birth: " + dob + "\n" +
+        "📧 Email: " + email + "\n" +
+        "📞 Phone: " + phone + "\n" +
+        "🔨 Selected Service: " + service + "\n" +
+        "📅 Appointment Date: " + date + "\n" +
+        "⏰ Appointment Time: " + time + "\n" +
+        "--------------------------\n" +
+        "Please confirm my appointment.\n";
+
+    const whatsappNumber = "919846619455";
+
+    const whatsappURL =
+        "https://wa.me/" + whatsappNumber +
+        "?text=" + encodeURIComponent(message);
+
+    window.open(whatsappURL, "_blank");
+
+});
+</script>
+
+</body>
+</html>
