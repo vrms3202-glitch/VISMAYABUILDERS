@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#142d3d">
+  <meta name="description" content="VISMAYA BUILDERS offers building construction, interior and exterior painting, renovation, flooring and waterproofing services in Peroorkada, Kerala.">
+  <title>VISMAYA BUILDERS | Construction & Painting</title>
+  <link rel="preload" as="image" href="assets/hero.svg">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="#home" aria-label="Vismaya Builders home">VISMAYA <span>BUILDERS</span></a>
+    <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="main-nav">
+      <span></span><span></span><span></span>
+    </button>
+    <nav id="main-nav" class="main-nav" aria-label="Main navigation">
+      <a href="#home">Home</a><a href="#services">Services</a><a href="#projects">Projects</a>
+      <a href="#about">About</a><a href="#appointment">Appointment</a><a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <p class="eyebrow">CONSTRUCTION · PAINTING · RENOVATION</p>
+        <h1>Building Dreams.<br><span>Painting Excellence.</span></h1>
+        <p class="hero-copy">Professional building construction, interior and exterior painting, renovation and maintenance services. Quality work you can trust.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#appointment">Book an appointment</a>
+          <a class="btn btn-outline" href="#services">Explore services</a>
+        </div>
+      </div>
+      <div class="hero-note"><strong>Quality you can see.</strong><span>Care in every detail.</span></div>
+    </section>
+
+    <section class="section" id="services">
+      <div class="section-heading">
+        <p class="eyebrow">WHAT WE DO</p><h2>Our Services</h2>
+        <p>Complete solutions for your home and commercial spaces.</p>
+      </div>
+      <div class="service-grid">
+        <article class="service-card"><div class="service-icon">⌂</div><h3>Building Construction</h3><p>Residential and commercial construction with quality materials and professional workmanship.</p></article>
+        <article class="service-card"><div class="service-icon">✦</div><h3>Interior Painting</h3><p>Beautiful interior painting, wall finishing and decorative painting for your dream home.</p></article>
+        <article class="service-card"><div class="service-icon">▧</div><h3>Exterior Painting</h3><p>Weather-resistant exterior painting to protect and beautify your building.</p></article>
+        <article class="service-card"><div class="service-icon">⌁</div><h3>Renovation Works</h3><p>House renovation, repairs, modifications and complete makeover services.</p></article>
+        <article class="service-card"><div class="service-icon">▦</div><h3>Plastering & Flooring</h3><p>Professional plastering, tile installation and flooring solutions.</p></article>
+        <article class="service-card"><div class="service-icon">◈</div><h3>Waterproofing</h3><p>Terrace, bathroom and wall waterproofing solutions to help prevent leakage.</p></article>
+      </div>
+    </section>
+
+    <section class="section projects-section" id="projects">
+      <div class="section-heading">
+        <p class="eyebrow">OUR WORK</p><h2>Project Gallery</h2>
+        <p>A selection of construction and finishing inspiration.</p>
+      </div>
+      <div class="project-grid">
+        <figure><img src="assets/project-home.svg" alt="Modern residential construction illustration"><figcaption>Modern homes</figcaption></figure>
+        <figure><img src="assets/project-interior.svg" alt="Interior finishing illustration"><figcaption>Interior finishing</figcaption></figure>
+        <figure><img src="assets/project-exterior.svg" alt="Exterior painting illustration"><figcaption>Exterior painting</figcaption></figure>
+        <figure><img src="assets/project-renovation.svg" alt="Home renovation illustration"><figcaption>Renovation</figcaption></figure>
+        <figure><img src="assets/project-flooring.svg" alt="Flooring and tile work illustration"><figcaption>Flooring works</figcaption></figure>
+        <figure><img src="assets/about-construction.svg" alt="Building construction illustration"><figcaption>Construction</figcaption></figure>
+      </div>
+      <p class="gallery-disclaimer">Gallery images are illustrative artwork, not verified photographs of completed client projects.</p>
+    </section>
+
+    <section class="about-section" id="about">
+      <div class="about-image"><img src="assets/about-construction.svg" alt="Illustration representing Vismaya Builders construction work"></div>
+      <div class="about-copy">
+        <p class="eyebrow">WHO WE ARE</p><h2>About Our Company</h2>
+        <p>We provide building construction, painting and renovation services with a focus on quality workmanship, reliable service and customer satisfaction.</p>
+        <p>From the foundation to the final coat of paint, we work to make your project vision a reality.</p>
+        <a class="btn btn-primary" href="#appointment">Talk to our team</a>
+      </div>
+    </section>
+
+    <section class="section appointment-section" id="appointment">
+      <div class="appointment-card">
+        <div class="section-heading">
+          <p class="eyebrow">LET'S DISCUSS YOUR PROJECT</p><h2>Book an Appointment</h2>
+          <p>Request an appointment or a free consultation with VISMAYA BUILDERS. Your details will be prepared as a WhatsApp message for confirmation.</p>
+        </div>
+        <form id="appointmentForm">
+          <div class="form-grid">
+            <div class="form-group"><label for="name">Full name <span>*</span></label><input type="text" id="name" name="name" placeholder="Enter your full name" autocomplete="name" required></div>
+            <div class="form-group"><label for="phone">Phone number <span>*</span></label><input type="tel" id="phone" name="phone" placeholder="e.g. 9846619455" autocomplete="tel" pattern="[0-9+() -]{7,20}" required></div>
+            <div class="form-group"><label for="email">Email address</label><input type="email" id="email" name="email" placeholder="Enter your email address" autocomplete="email"></div>
+            <div class="form-group"><label for="service">Required service <span>*</span></label>
+              <select id="service" name="service" required>
+                <option value="">Choose a service</option><option>Building Construction</option><option>Interior Painting</option>
+                <option>Exterior Painting</option><option>Renovation Works</option><option>Plastering Works</option>
+                <option>Flooring & Tile Installation</option><option>Waterproofing</option><option>Building Maintenance</option>
+                <option>Free Consultation</option><option>Other Services</option>
+              </select>
+            </div>
+            <div class="form-group"><label for="date">Preferred appointment date <span>*</span></label><input type="date" id="date" name="date" required></div>
+            <div class="form-group"><label for="time">Preferred appointment time <span>*</span></label><input type="time" id="time" name="time" required></div>
+            <div class="form-group form-wide"><label for="message">Project details (optional)</label><textarea id="message" name="message" rows="4" placeholder="Tell us briefly about your project or location"></textarea></div>
+          </div>
+          <button class="btn btn-submit" type="submit">Send appointment request on WhatsApp <span aria-hidden="true">↗</span></button>
+          <p class="form-hint">WhatsApp will open with your request ready to send. No appointment is confirmed until our team replies.</p>
+          <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <p class="eyebrow">GET IN TOUCH</p><h2>Let's Build Your Dream Project.</h2>
+      <p>Need a quotation or have a project in mind? Contact us today.</p>
+      <div class="contact-details">
+        <a href="tel:+919846619455"><span>Phone</span>+91 98466 19455</a>
+        <p><span>Location</span>NCC Road, Peroorkada, Kerala</p>
+        <a href="https://wa.me/919846619455" target="_blank" rel="noopener"><span>WhatsApp</span>Chat with Vismaya Builders</a>
+      </div>
+      <a class="btn btn-primary" href="https://wa.me/919846619455" target="_blank" rel="noopener">Chat on WhatsApp</a>
+    </section>
+  </main>
+
+  <footer><p>© <span id="year">2026</span> VISMAYA BUILDERS. All rights reserved.</p><p>Painting · Construction · Renovation</p></footer>
+  <a class="whatsapp-float" href="https://wa.me/919846619455" target="_blank" rel="noopener" aria-label="Chat with Vismaya Builders on WhatsApp">WhatsApp <span>↗</span></a>
+</body>
+</html>
